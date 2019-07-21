@@ -21,3 +21,16 @@
         - The resulting table can be fed into a model to make predictions
       - TF - iDF (Term frequency - inverse document frequency)
         - Weights number counts by how important the words are to a specific document
+
+## N-Grams
+ - a sequence of N consecutive words
+ - aka Markov Assumption (the word depends on the previous n words)
+ - Usage: 
+     - Word prediction (given the last n-1 words, model the distribution of the Nth word)
+      - Such as article spinner (Replacing part of the article with new words)
+ - Usually do bigrams (N = 2, first-order Markov) and trigrams (n = 3, second order Markov)
+   - Better performance on the unseen data (larger training samples)
+ - If N is too big, say n = 10, some sentences would not be that long
+ - Formula ( p(Wt | Wt-1, Wt-2, ... Wt-n+1) = count(Wt-n+1 -> Wt) / count(Wt-n+1 -> Wt-1) )
+   - counting of entire sequence / counting of entire sequence excluding the last word
+ - Not only looking at previous words, can also look at future words
