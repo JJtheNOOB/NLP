@@ -21,7 +21,8 @@
         - The resulting table can be fed into a model to make predictions
       - TF - iDF (Term frequency - inverse document frequency)
         - Weights number counts by how important the words are to documents
-        - raw word count / Document count
+        - Raw word count / Document count
+        - Not good for word analogies
 
 ## N-Grams
  - a sequence of N consecutive words
