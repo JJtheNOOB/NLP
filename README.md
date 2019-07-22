@@ -35,3 +35,7 @@
  - Formula ( p(Wt | Wt-1, Wt-2, ... Wt-n+1) = count(Wt-n+1 -> Wt) / count(Wt-n+1 -> Wt-1) )
    - counting of entire sequence / counting of entire sequence excluding the last word
  - Not only looking at previous words, can also look at future words
+ 
+ ## Word Embeddings
+   - Vectors that represents a word
+   - Embedding a categorical entity (a word) into a vector space
