@@ -20,7 +20,8 @@
         - Results in a table where each column represents a unique word
         - The resulting table can be fed into a model to make predictions
       - TF - iDF (Term frequency - inverse document frequency)
-        - Weights number counts by how important the words are to a specific document
+        - Weights number counts by how important the words are to documents
+        - raw word count / Document count
 
 ## N-Grams
  - a sequence of N consecutive words
