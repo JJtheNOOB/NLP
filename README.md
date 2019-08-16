@@ -44,4 +44,4 @@
 ## Distance Measurements between pieces of text
    - __Jaccard Distance__: The Jaccard distance between two sets of values is defined as the size of their intersection divided by the size of their union, i.e. the number of the values they have in common divided by the total number of unique values that appear in both sets.
    - __Levenshtein distance__: The Levenshtein distance between two texts is a string distance metric that indicates the number of single-character changes required to convert the one string to the other.Referring to the [FuzzyWuzzy](https://github.com/seatgeek/fuzzywuzzy) Library
-   - 
+   - [__Scipy's cdist__](https://docs.scipy.org/doc/scipy/reference/generated/scipy.spatial.distance.cdist.html) also allow you to measure similarities between numerical encoded categorical variables. Might not be used in NLP process but it is good to know. 
