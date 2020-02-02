@@ -3,13 +3,17 @@
 ## Some Typical steps for text processing:
    - __Spell checking__
       - too many typos will lose signal in the text
-      - tend to overfit to edgge cases of unique spelling mistakes
+      - tend to overfit to edge cases of unique spelling mistakes
    - __Industry specific Abbrevation Conversion__
       - Important to give your model more understanding of the indutry specific langugage
    - __Remove Stop words__
       - Reduce size of inputs, go easy on algorithm
    - __Remove Punctuation__
       - Reduce size of inputs, go easy on algorithm
+      - For example: 
+      ```
+      re.findall(r"[a-z]+(?:[a-z]+)?", s.lower())  #Returns a list of removed punctuation text
+      ```
    - __Stemming or Lemmatization__
       - Chopping off words to their original form: snowball & porter
       - Remember to preserve the industry specific words
