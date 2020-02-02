@@ -1,13 +1,29 @@
 # Natural Language Processing
 
+## Libraries avaliable
+- [NLTK](https://www.nltk.org/) 1.5G Nautral Language Toolkit
+- [TextBlob](https://textblob.readthedocs.io/en/dev/) Good for beginners
+- [Spacy](https://spacy.io/) Industrial-Strength Natural Language Processing
+- Differences: https://www.quora.com/What-is-the-use-of-NLTK-and-TextBlob-What-is-the-difference-between-both-And-for-text-analysis-which-tool-is-better
+
 ## Some Typical steps for text processing:
    - __Spell checking__
       - too many typos will lose signal in the text
       - tend to overfit to edge cases of unique spelling mistakes
+      - For example:
+      ```
+      from textblob import TextBlob
+      text = TextBlob("He is a gret peron").correct()
+      ```
    - __Industry specific Abbrevation Conversion__
       - Important to give your model more understanding of the indutry specific langugage
    - __Remove Stop words__
       - Reduce size of inputs, go easy on algorithm
+      - For example:
+      ```
+      from nltk.corpus import stopwords
+      stop_words = set(stopwords.words("english"))  #179 of them, you can potentially append more to this set
+      ```
    - __Remove Punctuation__
       - Reduce size of inputs, go easy on algorithm
       - For example: 
